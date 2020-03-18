@@ -67,8 +67,8 @@
                             <td>{{$car->model}}</td>
                             <td>{{$car->produced_on}}</td>
                             <td>
-                                <button class="btn btn-primary">Edit</button>
-                                <button  class="btn btn-danger">Remove</button>
+                                <a class="btn btn-primary">Edit</a>
+                                <a href="/cars/{{ $car->id }}/delete" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                     @endforeach

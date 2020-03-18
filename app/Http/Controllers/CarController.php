@@ -30,4 +30,10 @@ class CarController extends Controller
 
         return view('index' ,['cars'=>$cars]);
     }
+
+    public function destroy(Car $car){
+        $car->delete();
+
+        return redirect()->back();
+    }
 }

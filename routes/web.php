@@ -26,3 +26,5 @@ Route::post('/create' ,[
     'uses'=>'CarController@create',
     'as'=>'cars.create'
 ]);
+
+Route::get('cars/{car}/delete', 'CarController@destroy');
